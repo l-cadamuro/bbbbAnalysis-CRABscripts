@@ -1,4 +1,7 @@
-=== DATA_80X ===
+## the text between three equality signs is a block to process
+## if its name is preceded by DATA_ or MC_, the script can deduce the type and the corresponding cmsRun cfg to run on it
+
+=== DATA_BTAGCSV_80X ===
 /BTagCSV/Run2016B-03Feb2017_ver1-v1/MINIAOD
 /BTagCSV/Run2016B-03Feb2017_ver2-v2/MINIAOD
 /BTagCSV/Run2016C-03Feb2017-v1/MINIAOD
@@ -9,5 +12,17 @@
 /BTagCSV/Run2016H-03Feb2017_ver2-v1/MINIAOD
 /BTagCSV/Run2016H-03Feb2017_ver3-v1/MINIAOD
 
-=== MC_80X ===
+=== DATA_JETHT_80X ===
+/JetHT/Run2016B-03Feb2017_ver1-v1/MINIAOD
+/JetHT/Run2016B-03Feb2017_ver2-v2/MINIAOD
+/JetHT/Run2016C-03Feb2017-v1/MINIAOD
+/JetHT/Run2016D-03Feb2017-v1/MINIAOD
+/JetHT/Run2016E-03Feb2017-v1/MINIAOD
+/JetHT/Run2016F-03Feb2017-v1/MINIAOD
+/JetHT/Run2016G-03Feb2017-v1/MINIAOD
+/JetHT/Run2016H-03Feb2017_ver2-v1/MINIAOD
+/JetHT/Run2016H-03Feb2017_ver3-v1/MINIAOD
+
+=== MC_SIGNALS_80X ===
 /VBFHHTo4B_CV_1_C2V_1_C3_1_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM
+/GluGluToHHTo4B_node_SM_13TeV-madgraph/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM
