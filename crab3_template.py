@@ -15,7 +15,7 @@ config.JobType.psetName = 'test80X_NANO.py'
 config.Data.inputDataset = '/MY/PRECIOUS/DATASET'
 config.Data.inputDBS = 'global'
 config.Data.splitting = 'EventAwareLumiBased'
-config.Data.unitsPerJob = 2000 ## remember than n_max_job = 10000. NOTEL 30k / job is OK (a few hours to run)
+config.Data.unitsPerJob = 30000 ## remember than n_max_job = 10000. NOTEL 30k / job is OK (a few hours to run)
 config.Data.totalUnits = -1
 config.Data.outLFNDirBase = '/store/user/%s/NanoTest/' % (getUsernameFromSiteDB())
 config.Data.publication = False
