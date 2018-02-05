@@ -9,7 +9,8 @@ import argparse
 ###################################################################
 #### Parameters to configure
 
-PROCESS = ["DATA_BTAGCSV_80X", "DATA_JETHT_80X", "MC_SIGNALS_80X"]
+# PROCESS = ["DATA_BTAGCSV_80X", "DATA_JETHT_80X", "MC_SIGNALS_80X"]
+PROCESS = ["DATA_BTAGCSV_80X_RESUB", "DATA_JETHT_80X_RESUB"]
 datasetsFile = "datasets.txt"
 lumiMaskFileName = 'Cert_271036-284044_13TeV_23Sep2016ReReco_Collisions16_JSON.txt'
 
