@@ -20,6 +20,7 @@ class ProcDataset:
         self.Nfinished = ""
         self.TaskStatus = ""
         self.TaskStatusOnCRAB = None
+        self.TaskStatusOnSchedd = None
         self.subindex = None
         self.failureMessage = None
 
@@ -93,17 +94,19 @@ for dirr in dirsLevel1:
             procdataset.TaskStatusOnCRAB = blocks[1].strip()
         elif blocks [0] == "Failure message from the server":
             procdataset.failureMessage = blocks[1].strip()
+        elif blocks [0] == "Status on the scheduler":
+            procdataset.TaskStatusOnSchedd = blocks[1].strip()
     datasets.append(procdataset)
     print "\n\n"
     fulllog.write("\n\n")
 
-print "\n =================  ALL TASK STATUS (SHORT) ==================== \n\n"
+print "\n =================  ALL TASK STATUS (SHORT) onCRAB onSchedd ==================== \n\n"
 for dt in datasets:
-    print dt.subindex , " : " , dt.FolderName, dt.TaskStatusOnCRAB
+    print dt.subindex , " : " , dt.FolderName, dt.TaskStatusOnCRAB, dt.TaskStatusOnSchedd
 
 print "\n =================  ALL TASK STATUS (LONG) ==================== \n\n"
 for dt in datasets:
-    print dt.subindex , " : " , dt.FolderName, dt.TaskStatusOnCRAB
+    print dt.subindex , " : " , dt.FolderName, dt.TaskStatusOnCRAB, dt.TaskStatusOnSchedd
     print "     failureMessage: " , dt.failureMessage
 
 print "\n =================  TASK STATUS  ==================== \n\n"
